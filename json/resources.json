@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Unity",
+        "link": "https://unity.com/",
+        "description": "A powerful and popular engine for 2D and 3D games.",
+        "category": "Game Engines"
+    },
+    {
+        "name": "Unreal Engine",
+        "link": "https://www.unrealengine.com/",
+        "description": "AAA game development engine known for stunning visuals.",
+        "category": "Game Engines"
+    },
+    {
+        "name": "Godot",
+        "link": "https://godotengine.org/",
+        "description": "Open-source, lightweight game engine for 2D and 3D games.",
+        "category": "Game Engines"
+    },
+    {
+        "name": "Kenney Assets",
+        "link": "https://kenney.nl/assets",
+        "description": "Free and premium 2D/3D game assets.",
+        "category": "Asset Resources"
+    },
+    {
+        "name": "OpenGameArt",
+        "link": "https://opengameart.org/",
+        "description": "A large archive of free game assets, sprites, sounds, and textures.",
+        "category": "Asset Resources"
+    },
+    {
+        "name": "GameDev.tv",
+        "link": "https://www.gamedev.tv/",
+        "description": "Affordable courses on Unity, Unreal, and Blender.",
+        "category": "Learning Platforms"
+    },
+    {
+        "name": "Coursera",
+        "link": "https://www.coursera.org/specializations/game-development",
+        "description": "University-level courses on game design and development.",
+        "category": "Learning Platforms"
+    },
+    {
+        "name": "YouTube Data API",
+        "link": "https://developers.google.com/youtube/v3",
+        "description": "Embed and interact with game development tutorials and playlists.",
+        "category": "APIs & Tools"
+    },
+    {
+        "name": "Firebase",
+        "link": "https://firebase.google.com/",
+        "description": "Backend services like authentication and real-time database for games.",
+        "category": "APIs & Tools"
+    }
+]

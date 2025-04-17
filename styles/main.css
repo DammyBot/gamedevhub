@@ -1,0 +1,352 @@
+:root {
+    --bg-color: #0A1117;
+    --primary-accent: #101B26;
+    --secondary-accent: #0D47A1;
+    --text-color: #FFFFFF;
+
+    --text-primary: "Montserrat", sans-serif;
+    --text-secondary: "Poppins", sans-serif;
+
+    --text-xsmall: 12px;
+    --text-small: 14px;
+    --text-medium: 16px;
+    --text-large: 18px;
+    --text-xlarge: 32px;
+    --text-xxlarge: 48px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--bg-color);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.home {
+    width: 105px;
+}
+
+.home img {
+    width: 100%;
+}
+
+header a {
+    font-family: var(--text-secondary);
+    color: white;
+}
+
+.explore {
+    font-family: var(--text-primary);
+    font-weight: bolder;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    transition: .3s ease;
+}
+
+.explore:hover {
+    scale: 1.05;
+    transition: .3s ease;
+}
+
+.hero {
+    position: relative;
+    background-image: url("../images/bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero h1 {
+    color: white;
+    font-family: var(--text-primary);
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0 0 .1em black;
+}
+
+.hero p {
+    font-family: var(--text-secondary);
+    padding: 10px;
+    text-shadow: 0 0 .1em black;
+}
+
+.hero .explore {
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin: 10px auto;
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--text-primary);
+    font-weight: bolder;
+    font-size: var(--text-large);
+    margin: 20px;
+}
+
+p {
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--text-secondary);
+    font-size: var(--text-small);
+    padding: 5px;
+}
+
+.content {
+    padding: 10px;
+}
+
+#about,
+#resource {
+    display: flex;
+    gap: 24px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+#about::-webkit-scrollbar,
+#resource::-webkit-scrollbar {
+    display: none;
+}
+
+#about div,
+#resource div {
+    padding: 5px;
+    width: 100%;
+    min-width: 230px;
+    height: 150px;
+    background-color: var(--primary-accent);
+    border-radius: 15px;
+    margin: auto;
+    transition: .2s ease;
+}
+
+#about div:hover,
+#resource div:hover {
+    scale: 1.02;
+    transition: .2s ease;
+}
+
+#resource div {
+    height: 170px;
+}
+
+#about div h3,
+#resource div h3 {
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--text-primary);
+    font-size: var(--text-medium);
+    padding: 5px;
+    width: 100%;
+    text-shadow: 0 0 .1em black;
+}
+
+#about div p,
+#resource div p {
+    font-family: var(--text-secondary);
+    color: white;
+    font-size: var(--text-small);
+    text-align: center;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 5px;
+    text-shadow: 0 0 .1em black;
+}
+
+#resource div a {
+    font-family: var(--text-primary);
+    font-weight: bolder;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: var(--text-xsmall);
+    /* margin: auto; */
+    /* display: block; */
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    transition: .2s ease;
+}
+
+#resource div a:hover {
+    scale: 1.02;
+    transition: .2s ease;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    margin: 5px auto;
+    border: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 20px 0;
+}
+
+footer h2,
+footer p,
+footer a {
+    margin: 10px;
+    padding: 2px;
+    text-align: left;
+}
+
+footer a {
+    display: block;
+    color: white;
+    font-family: var(--text-secondary);
+    font-size: var(--text-small);
+    transition: .5s ease;
+}
+
+footer a:hover {
+    color: var(--secondary-accent);
+    transition: .5s ease;
+}
+.social a {
+    display: inline;
+}
+.social a img:hover {
+    scale: 1.05;
+    transition: .5s ease;
+}
+.social a img {
+    width: 16px;
+    margin: 5px 0;
+    transition: .5s ease;
+}
+
+#vids {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    max-width: 85vw;
+    margin: auto;
+}
+#vids div {
+    box-shadow: 0 0 .2em gray;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+}
+#vids div h3 {
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--text-primary);
+    font-size: var(--text-small);
+    padding: 5px;
+    width: 100%;
+    text-shadow: 0 0 .1em black;
+}
+#vids div a {
+    font-family: var(--text-secondary);
+    font-weight: bolder;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    padding: 7px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: var(--text-xsmall);
+    text-align: center;
+    transition: .2s ease;
+}
+#vids div a:hover {
+    color: var(--secondary-accent);
+    transition: .2s ease;
+}
+
+@media screen and (min-width: 36rem) {
+    header div {
+        max-width: 80vw;
+        /* width: 100%; */
+        margin: 0 auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    /* .learning {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* .learning h2,
+    .learning p {
+        text-align: left;
+        margin: 5px;
+        padding: 5px 0;
+    } */
+
+    .content:nth-of-type(2) {
+        max-width: 85vw;
+        margin: auto;
+    }
+
+    .hero {
+        background-image: url("../images/bg_large.webp");
+        padding: 50px 10px;
+    }
+
+    .hero .explore {
+        width: 25%;
+    }
+
+    .hero h1,
+    .hero p {
+        padding: 20px;
+    }
+
+    footer a {
+        display: inline;
+    }
+}
